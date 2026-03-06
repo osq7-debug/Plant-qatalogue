@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #a0a0a0;
+    color: #111;
+}
+
+.admin-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.admin-header h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.admin-header a {
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.admin-header a:hover {
+    color: #111;
+}
+
+/* LISÄÄ KASVI */
+.add-section {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 30px;
+}
+
+.add-section h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form input {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.form button {
+    padding: 12px;
+    background: #111;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #333;
+}
+
+#add-message {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* KASVILISTA */
+.list-section {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.list-section h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.plant-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.plant-item:last-child {
+    border-bottom: none;
+}
+
+.plant-item span {
+    font-size: 15px;
+}
+
+.plant-item button {
+    padding: 6px 14px;
+    background: white;
+    color: red;
+    border: 1px solid red;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.plant-item button:hover {
+    background: red;
+    color: white;
+}
+
+#delete-message {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#LogOut{
+    color: black;
+    font-weight: 800;
+}

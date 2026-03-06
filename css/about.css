@@ -1,0 +1,152 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #111;
+    line-height: 1.5;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #111;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 70px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+/* NAV */
+nav a {
+    text-decoration: none;
+    margin-left: 35px;
+    color: #444;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* HERO */
+.hero {
+    padding: 70px 70px 20px 70px;
+}
+
+.hero-text p {
+    max-width: 480px;
+    margin-top: 20px;
+    color: #555;
+}
+
+/* OTSIKKO */
+.title {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+    font-size: 46px;
+    font-weight: 800;
+}
+
+/* CONTENT: kuva + kortit rinnakkain */
+.content {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    padding: 50px 70px 80px 70px;
+}
+
+/* KUVA */
+.content-image img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid #ddd;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+/* KORTIT */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+/* YKSITTÄINEN KORTTI */
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content-image img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+   /* Header better stacking */
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px;
+        text-align: center;
+    }
+
+    /* Navigation spacing */
+    nav a {
+        margin-left: 0;
+        margin-right: 15px;
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 40px 20px 20px 20px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .content {
+        padding: 30px 20px 60px 20px;
+    }
+}

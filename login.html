@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login – Plant Catalogue</title>
+</head>
+<body>
+
+    <div class="login-box">
+        <h1>Admin Login</h1>
+        <p>Salasana: Admin123</p>
+        <form method="POST" action="/login">
+            <input type="password" name="salasana" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <p id="virhe"></p>
+        <a href="/gallery.html" class="back-btn">BACK TO GALLERY ↳</a>  
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        if (params.get("error")) {
+            const virhe = document.getElementById("virhe");
+            virhe.textContent = "Wrong password!";
+            virhe.style.color = "red";
+        }
+    </script>
+
+</body>
+</html>

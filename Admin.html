@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/admin.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin – Plant Catalogue</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+    <div class="admin-container">
+        <div class="admin-header">
+            <h1>Admin Panel</h1>
+            <a href="/logout" id="LogOut">Logout</a>
+        </div>
+
+        <!-- LISÄÄ KASVI -->
+        <section class="add-section">
+            <h2>Add New Plant</h2>
+            <div class="form">
+                <input type="text" id="name" placeholder="Name">
+                <input type="text" id="color" placeholder="Color">
+                <input type="text" id="material" placeholder="Material">
+                <input type="text" id="description" placeholder="Description">
+                <input type="file" id="image" accept="image/*">
+                <button onclick="addPlant()">Add Plant</button>
+            </div>
+            <p id="add-message"></p>
+        </section>
+
+        <!-- KASVILISTA -->
+        <section class="list-section">
+            <h2>Plants on the list</h2>
+            <div id="plant-list"></div>
+            <p id="delete-message"></p>
+        </section>
+    </div>
+
+    <script src="/js/admin.js"></script>
+</body>
+</html>

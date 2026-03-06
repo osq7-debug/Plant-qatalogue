@@ -1,0 +1,152 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+    color: #111;
+    line-height: 1.5;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #111;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 70px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+/* NAV */
+nav a {
+    text-decoration: none;
+    margin-left: 35px;
+    color: #444;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* HERO */
+.gallery-hero {
+    padding: 60px 70px 30px 70px;
+    max-width: 600px;
+}
+
+.gallery-hero h1 {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 18px;
+}
+
+.gallery-hero p {
+    font-size: 15px;
+    color: #555;
+    max-width: 480px;
+}
+
+/* GALLERY GRID */
+.gallery-section {
+    padding: 30px 70px 70px 70px;
+}
+
+.gallery-grid {
+    columns: 2;
+    column-gap: 20px;
+}
+
+/* KORTTI */
+.plant-card {
+    break-inside: avoid;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.plant-card img {
+    width: 100%;
+    display: block;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+
+.plant-card:hover img {
+    transform: scale(1.03);
+}
+
+/* KORTIN TIEDOT */
+.plant-info {
+    padding: 12px 4px 4px 4px;
+}
+
+.plant-info h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.plant-info p {
+    font-size: 13px;
+    color: #666;
+}
+.admin-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+/* RESPONSIIVISUUS */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px;
+        text-align: center;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-right: 15px;
+        font-size: 16px;
+    }
+
+    .gallery-hero {
+        padding: 40px 20px 20px 20px;
+    }
+
+    .gallery-hero h1 {
+        font-size: 28px;
+    }
+
+    .gallery-section {
+        padding: 20px;
+    }
+
+    .gallery-grid {
+        columns: 1;
+    }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Birch",
+    "color": "yellow",
+    "material": "wool, linen",
+    "image": "kuvat/koivuLehdet.jpg",
+    "description": "Leaves produce soft golden yellow tones on natural fibers."
+  },
+  {
+    "id": 2,
+    "name": "Onion Skin",
+    "color": "orange/brown",
+    "material": "wool, cotton",
+    "image": "kuvat/sipulit.jpg",
+    "description": "Outer skins yield rich orange and brown shades."
+  },
+  {
+    "id": 3,
+    "name": "Blueberry",
+    "color": "blue-purple",
+    "material": "wool, silk",
+    "image": "kuvat/mustikka.jpg",
+    "description": "Berries create soft blue-purple hues on protein fibers."
+  },
+  {
+    "id": 4,
+    "name": "Beetroot",
+    "color": "pink/red",
+    "material": "wool",
+    "image": "kuvat/punajuuri.jpg",
+    "description": "Root produces vibrant pink and red tones."
+  }
+]
