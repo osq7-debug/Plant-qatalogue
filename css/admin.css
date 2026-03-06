@@ -40,9 +40,9 @@ body {
 
 /* LISÄÄ KASVI */
 .add-section {
-    background: white;
+    background: rgb(255, 255, 255);
     border: 1px solid #ddd;
-    border-radius: 12px;
+    border-radius: 10px;
     padding: 24px;
     margin-bottom: 30px;
 }
@@ -61,7 +61,7 @@ body {
 .form input {
     padding: 10px 12px;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 14px;
 }
 
@@ -137,4 +137,12 @@ body {
 #LogOut{
     color: black;
     font-weight: 800;
+    padding: 12px;
+    background: #111;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
 }
